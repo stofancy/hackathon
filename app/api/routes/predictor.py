@@ -55,4 +55,4 @@ async def health():
         is_health = True
         return HealthResponse(status=is_health)
     except Exception:
-        raise HTTPException(status_code=404, detail="Unhealthy")
+        raise HTTPException(status_code=500, detail="Unhealthy")
