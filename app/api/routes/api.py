@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Request
+from fastapi import APIRouter
 
 # from api.routes import predictor
 from api.routes import hackathonor, predictor

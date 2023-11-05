@@ -30,3 +30,4 @@ MODEL_NAME = config("MODEL_NAME", default="model.pkl")
 INPUT_EXAMPLE = config("INPUT_EXAMPLE", default="./ml/model/examples/example.json")
 
 RANDOM_SEED = 123
+OPENAI_API_KEY: Secret = config("OPENAI_API_KEY", cast=Secret, default="")

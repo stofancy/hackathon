@@ -56,3 +56,4 @@ async def health():
         return HealthResponse(status=is_health)
     except Exception:
         raise HTTPException(status_code=500, detail="Unhealthy")
+        # raise HTTPException(status_code=500, detail=f"Unhealthy. Site configurations: {config.file_values}\n OPENAI_API_KEY: {OPENAI_API_KEY}")
